@@ -15,3 +15,15 @@ CREATE TABLE balances(
     balance_id SERIAL PRIMARY KEY,
     balance INT
 );
+
+INSERT INTO user_login (username , password)
+VALUES ('its_bryan',
+        'test123'
+        );
+
+INSERT INTO users (firstname , lastname , email)
+VALUES
+('Bryan', 'Smith' , 'bryan@devmtn.com'
+);
+INSERT INTO balances(balance)
+VALUES (0);
