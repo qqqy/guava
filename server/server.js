@@ -13,10 +13,14 @@ app.use(session({
   secret: secret,
   resave: false,
   saveUninitialized: false,
+  cookie: {
+    maxAge: 1000 * 60 * 60 * 24
+  }
 }));
 
 massive(string).then(
-  app.listen(port, () => {
+  app.listen(port, (database) => {
+    app.set('db' , database)
     console.log(`${port} is our port in the storm.`)
   })
 )
