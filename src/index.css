@@ -12,3 +12,21 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+/* FOR DRAGDEMO */
+
+#dragdemo-main {
+  display: flex
+}
+
+#dragdemo-main div {
+  height: 200px;
+  width: 200px;
+  border: 1px black dotted;
+  background-color: #eee;
+}
+
+#dragdemo-main .droppable {
+  border: none;
+  background-color: green;
+}

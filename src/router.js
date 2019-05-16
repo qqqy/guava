@@ -5,6 +5,11 @@ import Login from './components/Forms/Login';
 import LoginForm from './components/Forms/LoginForm';
 import HocDemo from './components/HocDemo';
 import ReduxDemo from './components/ReduxDemo';
+import SortableTreeDemo from './components/SortableTreeDemo';
+import DragDemo from './components/DragDemo';
+import DragDemoLive from './components/DragDemoLive';
+import Parent from './components/ReduxTesting/Parent';
+import Child from './components/ReduxTesting/Child';
 
 export default (
   <Switch>
