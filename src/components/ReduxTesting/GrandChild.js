@@ -12,4 +12,5 @@ function GrandChild(props){
   </>)
 }
 
-export default FakeRedux(GrandChild)
+export default GrandChild
+// export default FakeRedux(GrandChild)

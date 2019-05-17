@@ -10,10 +10,12 @@ import DragDemo from './components/DragDemo';
 import DragDemoLive from './components/DragDemoLive';
 import Parent from './components/ReduxTesting/Parent';
 import Child from './components/ReduxTesting/Child';
+import Ancestor from './components/ReduxTesting/Ancestor';
+import KeyGiver from './components/keyDemo/KeyGiver';
 
 export default (
   <Switch>
-    <Route path="/" component={Home} exact />
+    <Route path="/" component={KeyGiver} exact />
     <Route path="/login" component={ () => (
       <Login>
         <LoginForm/>

@@ -16,7 +16,7 @@ class LoginForm extends React.Component {
   }
 
   render() {
-    console.log(returnedFromConnect)
+    // console.log(returnedFromConnect)
     return (
       <>
         <h1>Login</h1>

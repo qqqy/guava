@@ -1,0 +1,1 @@
+This was supposed to be a proof-of-concept on the wacky hijinks react can get up to when you use and index for a key. Unfortunately, I clearly don't understand this because I haven't been able to get it to work.
