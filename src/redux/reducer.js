@@ -7,13 +7,15 @@ const initialState = {
   balance: null,
   authenticated: false,
   reduxDemo: "Hello WLH4!",
-  toChange: "Unchanged"
+  toChange: "Unchanged",
+  userObj: {}
 }
 
 const UPDATE_USER_ID = 'fj;lna;ne;lisna;';
 const UPDATE_USERNAME = 'dfhn;neoznsd;kljf;sajk';
 const UPDATE_USER_DETAILS = 'kdfja;bafe;uoba;lk';
-const CHANGE_STRING = 'eoihan;djkbilaeunae;o'
+const CHANGE_STRING = 'eoihan;djkbilaeunae;o';
+const UPDATE_USER_OBJ = 'fkjas;dkfja;dfjk;lafjnebliaj'
 
 export function updateUserId(id){
   return {
@@ -43,6 +45,13 @@ export function changeString(newString){
   }
 }
 
+export function updateUserObject(userObj){
+  return {
+    type: UPDATE_USER_OBJ,
+    payload: userObj
+  }
+}
+
 export default function reducer(state = initialState, action){
   const {type , payload} = action;
   switch(type){
@@ -54,6 +63,8 @@ export default function reducer(state = initialState, action){
       return {...state , ...payload}
     case CHANGE_STRING:
       return {...state , toChange: payload}
+    case UPDATE_USER_OBJ:
+      return {...state , userObj: payload}
     default:
       return state
   }

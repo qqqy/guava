@@ -30,6 +30,8 @@ app.use((req, res, next) => {
   next()
 })
 
+app.use(express.static(`server/static`)) //Just to demo static
+
 massive(string).then(database => {
   app.set('db', database)
   app.listen(port, () => {

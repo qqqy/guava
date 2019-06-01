@@ -12,10 +12,13 @@ import Parent from './components/ReduxTesting/Parent';
 import Child from './components/ReduxTesting/Child';
 import Ancestor from './components/ReduxTesting/Ancestor';
 import KeyGiver from './components/keyDemo/KeyGiver';
+import UserUpdater from './components/UserUpdater';
+import ReactAnimation from './components/ReactAnimation';
+import TelfordMartTest from './components/TelfordMartTest';
 
 export default (
   <Switch>
-    <Route path="/" component={KeyGiver} exact />
+    <Route path="/" component={TelfordMartTest} exact />
     <Route path="/login" component={ () => (
       <Login>
         <LoginForm/>

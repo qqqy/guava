@@ -1,0 +1,27 @@
+#first {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: blue;
+  position: fixed;
+  animation-name: first;
+  animation-duration: 2s;
+}
+
+#second {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: red;
+  position: fixed;
+}
+
+.fire-second {
+  animation-name: first;
+  animation-duration: 2s;
+}
+
+@keyframes first {
+  from {top: 0}
+  to {top: 100vh}
+}
