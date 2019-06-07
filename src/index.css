@@ -30,3 +30,16 @@ code {
   border: none;
   background-color: green;
 }
+
+/* For CustomFont */
+
+/* @import url(https://www.wfonts.com/download/data/2015/05/26/blackadder-itc/ITCBLKAD.TTF); */
+
+@font-face {
+  font-family: "Blackadder";
+  src: url("./styles/itcblkad.ttf") format("TrueType")
+}
+
+#custom-font-example {
+ font-family: "Blackadder";
+}
