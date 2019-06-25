@@ -15,11 +15,12 @@ import ReduxDemo from './components/ReduxDemo';
 // import UserUpdater from './components/UserUpdater';
 // import ReactAnimation from './components/ReactAnimation';
 // import TelfordMartTest from './components/TelfordMartTest';
-import CustomFont from './components/CustomFont';
+// import CustomFont from './components/CustomFont';
+import BurgerDemo from './components/BurgerDemo';
 
 export default (
   <Switch>
-    <Route path="/" component={CustomFont} exact />
+    <Route path="/" component={BurgerDemo} exact />
     <Route path="/login" component={ () => (
       <Login>
         <LoginForm/>
